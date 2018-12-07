@@ -1,4 +1,4 @@
-﻿namespace CalcTests
+﻿namespace CalcGui
 {
     partial class Form1
     {
@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.BtnTest1 = new System.Windows.Forms.Button();
+            this.BtnTest2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // BtnTest1
@@ -41,11 +42,22 @@
             this.BtnTest1.UseVisualStyleBackColor = true;
             this.BtnTest1.Click += new System.EventHandler(this.TestButton_Click);
             // 
+            // BtnTest2
+            // 
+            this.BtnTest2.Location = new System.Drawing.Point(12, 41);
+            this.BtnTest2.Name = "BtnTest2";
+            this.BtnTest2.Size = new System.Drawing.Size(179, 23);
+            this.BtnTest2.TabIndex = 1;
+            this.BtnTest2.Text = "Default values";
+            this.BtnTest2.UseVisualStyleBackColor = true;
+            this.BtnTest2.Click += new System.EventHandler(this.TestButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.BtnTest2);
             this.Controls.Add(this.BtnTest1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -56,6 +68,7 @@
         #endregion
 
         private System.Windows.Forms.Button BtnTest1;
+        private System.Windows.Forms.Button BtnTest2;
     }
 }
 
